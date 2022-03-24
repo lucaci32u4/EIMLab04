@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_hidden"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="invisible">
+
+    <EditText
+        android:id="@+id/f_job"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Job"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/f_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Company"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/f_job"
+        app:layout_constraintTop_toBottomOf="@+id/f_job" />
+
+    <EditText
+        android:id="@+id/f_website"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Website"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/f_company"
+        app:layout_constraintTop_toBottomOf="@+id/f_company" />
+
+    <EditText
+        android:id="@+id/f_im"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="IM"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/f_website"
+        app:layout_constraintTop_toBottomOf="@+id/f_website" />
+</androidx.constraintlayout.widget.ConstraintLayout>
